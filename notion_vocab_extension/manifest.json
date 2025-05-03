@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Notion Vocab Helper",
+  "version": "1.0",
+  "description": "Translate and save copied vocabulary to Notion.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "clipboardRead"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icons/icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/icon.gif"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
