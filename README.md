@@ -6,7 +6,6 @@
 1. **Clone 或下載此專案**
    ```bash
    git clone https://github.com/chiwei82/build_sth
-   cd notion-vocab-extension
    ```
 
 2. **開啟 Chrome 擴充功能頁面**
@@ -15,7 +14,7 @@
 
 3. **載入未封裝的擴充功能**
    - 點擊「載入已解壓縮的擴充功能（Load unpacked）」
-   - 選取 notion_vocab_extension 資料夾（包含 `manifest.json` 的那個資料夾）
+   - 選取 build_sth/notion_vocab_extension 資料夾（包含 `manifest.json` 的那個資料夾）
 
 4. **設定 Notion 整合**
    - 點擊瀏覽器右上角的擴充功能圖示
